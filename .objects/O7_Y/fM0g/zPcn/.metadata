@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge ACME System 1 - Add Invoice Details",
+  "Type": "Screen",
+  "Id": "zPcnRv8-LEqrgUSa1dj9hw",
+  "Reference": "N4zNCrXAsE6rZQon7699UQ/zPcnRv8-LEqrgUSa1dj9hw",
+  "ParentRef": "N4zNCrXAsE6rZQon7699UQ/fM0gnEdHQEKznXiD5YtMBg",
+  "Created": "2026-02-16T05:04:25.9207119Z",
+  "Updated": "2026-02-16T05:04:25.9207119Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.24.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

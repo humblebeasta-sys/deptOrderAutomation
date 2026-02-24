@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge ACME System 1 - Add Invoice Details",
+  "Type": "App",
+  "Id": "O7_YsW-3zkWWcgbgVO4zjg",
+  "Reference": "N4zNCrXAsE6rZQon7699UQ/O7_YsW-3zkWWcgbgVO4zjg",
+  "Created": "2026-02-16T05:04:25.3599375Z",
+  "Updated": "2026-02-16T05:04:25.3599375Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.24.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

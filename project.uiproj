@@ -1,0 +1,6 @@
+{
+  "Name": "xDept_OrderAutomation",
+  "ProjectType": "Process",
+  "Description": "Robotic Enterprise Framework",
+  "MainFile": "Main.xaml"
+}
