@@ -1,0 +1,267 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="897.2,573.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="b5ce99a0-38a5-42c2-bcb1-37d33817d9c3" DisplayName="CV Screen Scope 'INFINITE-SCROLLER'" sap:VirtualizedContainerService.HintSize="449.6,550.4" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+      <p:CVScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Text 'Automation Cloud portal.' (406,317,182,18)&quot;]" DesignTimeCacheId="b5ce99a0-38a5-42c2-bcb1-37d33817d9c3" DesignTimeScaleFactor="1.25" DisplayName="CV Click - Text" sap:VirtualizedContainerService.HintSize="400,209.6" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="c096fc6b52f3beaab4de60f4c893a526" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+              <p:CvClickWithDescriptor.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </p:CvClickWithDescriptor.CursorPosition>
+              <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                <uc:CvDescriptor Id="42b8bb29-36bc-4bd5-8df8-bf1b9be006e4">
+                  <uc:CvDescriptor.Target>
+                    <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="406, 317, 182, 18" ElementType="Text" Text="Automation Cloud portal." />
+                  </uc:CvDescriptor.Target>
+                </uc:CvDescriptor>
+              </p:CvClickWithDescriptor.DesignTimeDescriptor>
+              <p:CvClickWithDescriptor.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="060978e2-997a-4424-93f9-a85cb0bad3f5">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </p:CvClickWithDescriptor.Target>
+            </p:CvClickWithDescriptor>
+          </Sequence>
+        </ActivityAction>
+      </p:CVScope.Body>
+      <p:CVScope.DesignTimeCacheContainer>
+        <uc:CvCacheContainer>
+          <uc:CvCacheContainer.Caches>
+            <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+              <uc:CVCache DataSent="False" DisplayName="Screen CV Click - 'Automation  (Main)" Id="b5ce99a0-38a5-42c2-bcb1-37d33817d9c3" InformativeScreenshot="5baa5e1fe82d2ecc622b3339d0f79327" LogicalPosition="95, 188" OcrText="When should you use it? You should only use Computer Vision when Standard Selectors are unavailable or unreliable. This usually happens in: Virtual Environments: Citrix, VDI, Remote Desktops. Flash or Silverlight applications. Websites with dynamic IDs that change every time you refresh. Legacy Desktop Apps that don't expose their internal structure. Pro Tip: To use Computer Vision, you will need a Computer Vision API Key from your UiPath Automation Cloud portal. Would you like me to guide you on how to get your API key and set up your first CV Screen Scope? Sources" Position="95, 188" ScaleFactor="1.25" ScreenshotGuid="b4eac6f2-2952-466b-a3fa-54599bbb1dba" ServerVersion="24.10.5.1">
+                <uc:CVCache.CvAnchorRelations>
+                  <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
+                </uc:CVCache.CvAnchorRelations>
+                <uc:CVCache.CvUiElements>
+                  <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="8">
+                    <uc:CvElementInfo Category="Button" Description="Button" Region="398, 436, 112, 43" />
+                    <uc:CvElementInfo Category="Icon" Description="paperclip icon" Region="412, 448, 18, 17" />
+                    <uc:CvElementInfo Category="Icon" Description="Icon" Region="832, 136, 24, 20" />
+                    <uc:CvElementInfo Category="Icon" Description="Icon" Region="836, 140, 16, 15" />
+                    <uc:CvElementInfo Description="{x:Null}" Category="Button" Confidence="Runtime" Region="831, 136, 25, 22" />
+                    <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="397, 436, 114, 41" />
+                  </scg:List>
+                </uc:CVCache.CvUiElements>
+                <uc:CVCache.OcrTexts>
+                  <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="94">
+                    <uc:OcrTextInfo Region="405, 40, 46, 16" Text="When" />
+                    <uc:OcrTextInfo Region="456, 40, 52, 16" Text="should" />
+                    <uc:OcrTextInfo Region="512, 44, 29, 14" Text="you" />
+                    <uc:OcrTextInfo Region="544, 44, 28, 10" Text="use" />
+                    <uc:OcrTextInfo Region="576, 40, 20, 16" Text="it?" />
+                    <uc:OcrTextInfo Region="406, 74, 26, 14" Text="You" />
+                    <uc:OcrTextInfo Region="436, 73, 49, 16" Text="should" />
+                    <uc:OcrTextInfo Region="489, 74, 32, 17" Text="only" />
+                    <uc:OcrTextInfo Region="524, 77, 26, 12" Text="use" />
+                    <uc:OcrTextInfo Region="552, 74, 74, 17" Text="Computer" />
+                    <uc:OcrTextInfo Region="628, 74, 44, 14" Text="Vision" />
+                    <uc:OcrTextInfo Region="676, 74, 40, 14" Text="when" />
+                    <uc:OcrTextInfo Region="720, 73, 72, 16" Text="Standard" />
+                    <uc:OcrTextInfo Region="794, 73, 74, 16" Text="Selectors" />
+                    <uc:OcrTextInfo Region="872, 77, 24, 12" Text="are" />
+                    <uc:OcrTextInfo Region="900, 73, 82, 16" Text="unavailable" />
+                    <uc:OcrTextInfo Region="985, 77, 16, 12" Text="or" />
+                    <uc:OcrTextInfo Region="1004, 73, 76, 16" Text="unreliable." />
+                    <uc:OcrTextInfo Region="405, 102, 32, 14" Text="This" />
+                    <uc:OcrTextInfo Region="440, 101, 52, 18" Text="usually" />
+                    <uc:OcrTextInfo Region="494, 102, 64, 17" Text="happens" />
+                    <uc:OcrTextInfo Region="561, 102, 17, 14" Text="in:" />
+                    <uc:OcrTextInfo Region="440, 137, 54, 16" Text="Virtual" />
+                    <uc:OcrTextInfo Region="497, 137, 112, 16" Text="Environments:" />
+                    <uc:OcrTextInfo Region="612, 138, 44, 16" Text="Citrix," />
+                    <uc:OcrTextInfo Region="658, 138, 30, 16" Text="VDI," />
+                    <uc:OcrTextInfo Region="692, 138, 56, 14" Text="Remote" />
+                    <uc:OcrTextInfo Region="752, 138, 72, 17" Text="Desktops." />
+                    <uc:OcrTextInfo Region="441, 173, 42, 16" Text="Flash" />
+                    <uc:OcrTextInfo Region="486, 177, 18, 12" Text="or" />
+                    <uc:OcrTextInfo Region="506, 173, 81, 18" Text="Silverlight" />
+                    <uc:OcrTextInfo Region="590, 174, 92, 17" Text="applications." />
+                    <uc:OcrTextInfo Region="440, 209, 73, 16" Text="Websites" />
+                    <uc:OcrTextInfo Region="516, 209, 36, 16" Text="with" />
+                    <uc:OcrTextInfo Region="554, 209, 68, 18" Text="dynamic" />
+                    <uc:OcrTextInfo Region="625, 210, 25, 14" Text="IDs" />
+                    <uc:OcrTextInfo Region="654, 210, 30, 14" Text="that" />
+                    <uc:OcrTextInfo Region="688, 210, 54, 17" Text="change" />
+                    <uc:OcrTextInfo Region="746, 213, 41, 14" Text="every" />
+                    <uc:OcrTextInfo Region="790, 210, 33, 14" Text="time" />
+                    <uc:OcrTextInfo Region="825, 213, 28, 14" Text="you" />
+                    <uc:OcrTextInfo Region="856, 209, 57, 16" Text="refresh." />
+                    <uc:OcrTextInfo Region="441, 246, 58, 17" Text="Legacy" />
+                    <uc:OcrTextInfo Region="502, 246, 65, 17" Text="Desktop" />
+                    <uc:OcrTextInfo Region="570, 246, 41, 17" Text="Apps" />
+                    <uc:OcrTextInfo Region="614, 246, 30, 14" Text="that" />
+                    <uc:OcrTextInfo Region="648, 246, 38, 14" Text="don't" />
+                    <uc:OcrTextInfo Region="689, 249, 54, 14" Text="expose" />
+                    <uc:OcrTextInfo Region="746, 246, 34, 14" Text="their" />
+                    <uc:OcrTextInfo Region="784, 246, 54, 14" Text="internal" />
+                    <uc:OcrTextInfo Region="842, 248, 72, 13" Text="structure." />
+                    <uc:OcrTextInfo Region="406, 290, 28, 14" Text="Pro" />
+                    <uc:OcrTextInfo Region="436, 289, 32, 18" Text="Tip:" />
+                    <uc:OcrTextInfo Region="468, 290, 18, 14" Text="To" />
+                    <uc:OcrTextInfo Region="490, 293, 26, 12" Text="use" />
+                    <uc:OcrTextInfo Region="520, 290, 74, 17" Text="Computer" />
+                    <uc:OcrTextInfo Region="596, 290, 48, 16" Text="Vision," />
+                    <uc:OcrTextInfo Region="646, 293, 28, 14" Text="you" />
+                    <uc:OcrTextInfo Region="676, 289, 24, 16" Text="will" />
+                    <uc:OcrTextInfo Region="704, 289, 37, 16" Text="need" />
+                    <uc:OcrTextInfo Region="745, 293, 9, 12" Text="a" />
+                    <uc:OcrTextInfo Region="758, 290, 80, 17" Text="Computer" />
+                    <uc:OcrTextInfo Region="840, 290, 48, 14" Text="Vision" />
+                    <uc:OcrTextInfo Region="890, 290, 28, 14" Text="API" />
+                    <uc:OcrTextInfo Region="921, 290, 30, 17" Text="Key" />
+                    <uc:OcrTextInfo Region="954, 289, 34, 16" Text="from" />
+                    <uc:OcrTextInfo Region="992, 293, 34, 14" Text="your" />
+                    <uc:OcrTextInfo Region="1028, 290, 50, 14" Text="UiPath" />
+                    <uc:OcrTextInfo Region="406, 318, 84, 14" Text="Automation" />
+                    <uc:OcrTextInfo Region="493, 317, 44, 16" Text="Cloud" />
+                    <uc:OcrTextInfo Region="540, 318, 48, 17" Text="portal." />
+                    <uc:OcrTextInfo Region="405, 362, 46, 14" Text="Would" />
+                    <uc:OcrTextInfo Region="456, 365, 28, 14" Text="you" />
+                    <uc:OcrTextInfo Region="486, 361, 24, 16" Text="like" />
+                    <uc:OcrTextInfo Region="514, 365, 24, 12" Text="me" />
+                    <uc:OcrTextInfo Region="540, 364, 16, 13" Text="to" />
+                    <uc:OcrTextInfo Region="560, 362, 41, 18" Text="guide" />
+                    <uc:OcrTextInfo Region="604, 365, 28, 14" Text="you" />
+                    <uc:OcrTextInfo Region="634, 365, 18, 12" Text="on" />
+                    <uc:OcrTextInfo Region="656, 361, 32, 16" Text="how" />
+                    <uc:OcrTextInfo Region="690, 364, 16, 13" Text="to" />
+                    <uc:OcrTextInfo Region="709, 364, 25, 17" Text="get" />
+                    <uc:OcrTextInfo Region="737, 365, 34, 14" Text="your" />
+                    <uc:OcrTextInfo Region="773, 362, 25, 14" Text="API" />
+                    <uc:OcrTextInfo Region="802, 361, 26, 18" Text="key" />
+                    <uc:OcrTextInfo Region="832, 361, 28, 16" Text="and" />
+                    <uc:OcrTextInfo Region="862, 364, 24, 13" Text="set" />
+                    <uc:OcrTextInfo Region="889, 365, 20, 14" Text="up" />
+                    <uc:OcrTextInfo Region="912, 365, 33, 14" Text="your" />
+                    <uc:OcrTextInfo Region="948, 361, 30, 16" Text="first" />
+                    <uc:OcrTextInfo Region="980, 362, 22, 14" Text="CV" />
+                    <uc:OcrTextInfo Region="1005, 362, 52, 14" Text="Screen" />
+                    <uc:OcrTextInfo Region="406, 390, 56, 17" Text="Scope?" />
+                    <uc:OcrTextInfo Region="436, 449, 56, 12" Text="Sources" />
+                  </scg:List>
+                </uc:CVCache.OcrTexts>
+              </uc:CVCache>
+            </scg:List>
+          </uc:CvCacheContainer.Caches>
+        </uc:CvCacheContainer>
+      </p:CVScope.DesignTimeCacheContainer>
+      <p:CVScope.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseAccents="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="400,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" UseSeparateOcrProcess="True" />
+        </ActivityFunc>
+      </p:CVScope.OCREngine>
+      <p:CVScope.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ecfb1cbf-16b8-449e-8787-e59476d250c8" InformativeScreenshot="b5847a8cdcd0556c7c16c7d844797fe6" Selector="&lt;html app='msedge.exe' title='Google Gemini' /&gt;&lt;webctrl parentid='chat-history' tag='INFINITE-SCROLLER' /&gt;" WaitForReady="INTERACTIVE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </p:CVScope.Target>
+      <p:CVScope.UseLocalServer>
+        <InArgument x:TypeArguments="x:Boolean" />
+      </p:CVScope.UseLocalServer>
+    </p:CVScope>
+  </Sequence>
+</Activity>
